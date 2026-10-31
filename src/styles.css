@@ -1,0 +1,49 @@
+.lpsp-editor {
+  --lpsp-accent: #3859c7;
+  max-width: 700px;
+  font:
+    14px system-ui,
+    sans-serif;
+  color: #17213a;
+}
+.lpsp-editor canvas {
+  display: block;
+  width: 320px;
+  max-width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  touch-action: none;
+  background: repeating-conic-gradient(#e2e6ee 0% 25%, #fff 0% 50%) 0 0 / 16px 16px;
+  border: 1px solid #bac3d5;
+}
+.lpsp-editor fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: 1px solid #bac3d5;
+  border-radius: 6px;
+  margin: 8px 0;
+}
+.lpsp-editor label {
+  display: grid;
+  gap: 4px;
+}
+.lpsp-editor input,
+.lpsp-editor select,
+.lpsp-editor button {
+  font: inherit;
+  padding: 6px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.lpsp-editor button {
+  margin: 4px;
+}
+.lpsp-editor [aria-pressed='true'] {
+  outline: 2px solid var(--lpsp-accent);
+  outline-offset: 1px;
+}
+.lpsp-editor :focus-visible {
+  outline: 2px solid var(--lpsp-accent);
+  outline-offset: 2px;
+}
